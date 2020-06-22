@@ -1,0 +1,316 @@
+:root {
+    /* color variable*/
+    --dark-blue: rgb(3, 9, 37);
+    --white: rgb(255, 255, 255);
+    --gray: rgb(97, 96, 96);
+
+    /* _ _ _ variable*/   
+    --nav-bar-height: 82.5px;
+    --nav-link-font-size: 15.5px;
+    --title-font-size: 30px;
+    --title-padding-top: 65px;
+    --title-padding-bottom: 15px;
+    --text-font-size: 13.5px;
+    --text-align: center;
+    --text-line-height: 25px;
+    --padding-left: 0px;
+    --padding-right: 0px;
+    --text-padding-bottom: 25px;
+    --bullet-points-padding: 0px;
+    --image-border: rgb(153, 148, 148);
+    --profile-name-f-size: 16px;
+    --email-width: 350px;
+    --submit-width: 353px;
+    --form-height: 200px;
+    --portfolio-img-width: 275px;
+    --portfolio-img-height: 250px;
+    --justify: space-between;
+}
+
+@media(max-width: 360px){
+    
+    #bullet-points-div{
+        flex-wrap: wrap;
+    }
+
+    #team-profile-div{
+        flex-wrap: wrap;
+    }    
+
+    :root {
+        --nav-bar-height: 72.5px;
+        --nav-link-font-size: 14px;
+        --title-font-size: 23px;
+        --profile-name-f-size: 16px;
+        --title-padding-top: 10px;
+        --title-padding-bottom: 10px;
+        --text-font-size: 12.5px;
+        --text-align: left;
+        --text-line-height: 22.5px;
+        --padding-left: 10px;
+        --padding-right: 10px;
+        --text-padding-bottom: 12.5px;
+        --email-width: 300px;
+        --submit-width: 303px;
+        --form-height: 125px;
+        --portfolio-img-width: 105px;
+        --portfolio-img-height: 105px;
+        --justify: center;
+    }
+}
+
+body{
+    margin-bottom: 0px;
+    background-color: rgb(247, 248, 248);
+}
+
+header{
+    max-width: 100%;
+}
+
+#nav-bar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1000px;
+    align-items: center;
+    justify-content: space-around;
+    height: var(--nav-bar-height, 82.5px);
+    border: 1px outset var(--white);
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 5px 0.5px rgb(196, 195, 195);;
+}
+
+#header-img-div{
+    display: flex;
+    flex-direction: row;
+}
+
+#header-img{
+    width: 150px;
+    height: 50px;
+    
+}
+
+#nav-link-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: 500px;
+    flex-wrap: wrap;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: var(--nav-link-font-size, 15.5px);
+    color: var(--dark-blue);
+}
+
+.nav-link:hover{
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes background-color{
+    100%{
+        background-color: rgb(231, 230, 230);
+        border-radius: 6px;
+        color: rgb(0, 0, 0);
+    }
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: var(--form-height, 200px); 
+}
+
+#email-div{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#submit-btn-div{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    justify-content: center; 
+    margin-top: 7px;
+}
+
+#email{
+    flex-basis: var(--email-width);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#submit{
+    flex-basis: var(--submit-width);
+    border-radius: 5px;
+    background-color: hsl(193, 89%, 29%);
+    color: rgb(255, 255, 255);
+}
+
+.title{
+    border-bottom: 3px solid var(--white);
+    text-align: center;
+    font-size: var(--title-font-size, 30px);
+    font-family: sans-serif;
+    color: var(--dark-blue);
+    padding-top: var(--title-padding-top, 65px);
+    padding-bottom: var(--title-padding-bottom, 15px);
+    margin-bottom: 0px;
+}
+
+/*
+  -->  Here
+*/
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 850px;
+}
+
+.p{
+    color: var(--gray);
+    padding-bottom: var(--text-padding-bottom, 25px);
+    text-align: var(--text-align, center);
+    font-size: var(--text-font-size, 13.5px);
+    font-family: sans-serif;
+    line-height: var(--text-line-height, 25px);
+    max-width: 100%;
+}
+
+#video{
+    max-width: 100%;
+    height: auto;
+}
+
+#porfolio-img-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p-img-div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: var(--portfolio-img-width, 275px);
+}
+
+.portfolio-image{
+    max-width: 100%;
+    height: var(--portfolio-img-height, 250px);
+    border: 2px solid var(--image-border, rgb(153, 148, 148));
+}
+
+#bullet-points-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 22.5px;
+    color: var(--gray);
+}
+
+.bullet-points{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-basis: 250px;
+}
+
+#team-profile-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#team-profile-div{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 900px;
+    justify-content: var(--justify, space-between);
+}
+
+.profiles{
+    flex-basis: 265px;
+    height: auto;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 5px;
+}
+
+#profile-1{
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-2{
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-3{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image{
+    max-width: 100%;
+}
+
+.profile-name{
+    margin-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: var(--profile-name-f-size);
+    color: var(--dark-blue);
+}
+
+.job-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 19px;
+    color: var(--gray);
+    font-size: 14px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.profile-info{
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--gray);
+    line-height: var(--text-line-height, 25px);
+    font-size: 14px;
+    text-align: left;
+}
+
+
+
+
+
