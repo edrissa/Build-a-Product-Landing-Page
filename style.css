@@ -42,14 +42,20 @@
         --nav-link-font-size: 14px;
         --title-font-size: 23px;
         --profile-name-f-size: 16px;
-        --title-padding-top: 10px;
+
+        /*Adding padding top on title*/
+        --title-padding-top: 32.5px;
+        
         --title-padding-bottom: 10px;
+        
         --text-font-size: 12.5px;
         --text-align: left;
         --text-line-height: 22.5px;
         --padding-left: 10px;
         --padding-right: 10px;
+        
         --text-padding-bottom: 12.5px;
+
         --email-width: 300px;
         --submit-width: 303px;
         --form-height: 125px;
