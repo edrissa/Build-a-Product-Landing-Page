@@ -15,6 +15,7 @@
     --text-line-height: 25px;
     --padding-left: 0px;
     --padding-right: 0px;
+    --text-padding-top: 0px;
     --text-padding-bottom: 25px;
     --bullet-points-padding: 0px;
     --image-border: rgb(153, 148, 148);
@@ -46,6 +47,7 @@
         /*Adding padding top on title*/
         --title-padding-top: 32.5px;
         
+        --text-padding-top: 5px;
         --title-padding-bottom: 10px;
         
         --text-font-size: 12.5px;
@@ -202,6 +204,7 @@ header{
 
 .p{
     color: var(--gray);
+    padding-top: var(--text-padding-top, 0px);
     padding-bottom: var(--text-padding-bottom, 25px);
     text-align: var(--text-align, center);
     font-size: var(--text-font-size, 13.5px);
