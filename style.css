@@ -20,6 +20,7 @@
     --bullet-points-padding: 0px;
     --image-border: rgb(153, 148, 148);
     --profile-name-f-size: 16px;
+    --email-box-padding-top: 20px;
     --email-width: 350px;
     --submit-width: 353px;
     --form-height: 200px;
@@ -57,6 +58,8 @@
         --padding-right: 10px;
         
         --text-padding-bottom: 20px;
+
+        --email-box-padding-top: 35px;
 
         --email-width: 300px;
         --submit-width: 303px;
@@ -152,7 +155,7 @@ header{
     flex-direction: row;
     height: 40px;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: var(--email-box-padding-top, 20px);
 }
 
 #submit-btn-div{
