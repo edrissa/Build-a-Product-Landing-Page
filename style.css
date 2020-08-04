@@ -18,7 +18,7 @@
     --text-padding-top: 0px;
     --text-padding-bottom: 25px;
     --bullet-points-padding: 0px;
-    --image-border: rgb(153, 148, 148);
+    --image-border-color: rgb(206, 206, 206);
     --profile-name-f-size: 16px;
     --email-box-padding-top: 20px;
     --email-width: 350px;
@@ -27,6 +27,7 @@
     --portfolio-img-width: 275px;
     --portfolio-img-height: 250px;
     --justify: space-between;
+    --row: row;
 }
 
 @media(max-width: 360px){
@@ -37,7 +38,11 @@
 
     #team-profile-div{
         flex-wrap: wrap;
-    }    
+    }  
+
+    #portfolio-img-div{
+        flex-wrap: wrap;
+    }
 
     :root {
         --nav-bar-height: 72.5px;
@@ -64,8 +69,8 @@
         --email-width: 300px;
         --submit-width: 303px;
         --form-height: 125px;
-        --portfolio-img-width: 105px;
-        --portfolio-img-height: 105px;
+        --portfolio-img-width: 265px;
+        --portfolio-img-height: 200px;
         --justify: center;
     }
 }
@@ -94,7 +99,7 @@ header{
     background-color: rgb(255, 255, 255);
     opacity: 0.9;
     flex-wrap: wrap;
-    box-shadow: 1px 1px 5px 0.5px rgb(196, 195, 195);;
+    box-shadow: 1px 1px 5px 0.5px rgb(196, 195, 195);
 }
 
 #header-img-div{
@@ -221,10 +226,10 @@ header{
     height: auto;
 }
 
-#porfolio-img-div{
+#portfolio-img-div{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: var(--row);
+    justify-content: var(--justify);
 }
 
 .p-img-div{
@@ -236,7 +241,8 @@ header{
 .portfolio-image{
     max-width: 100%;
     height: var(--portfolio-img-height, 250px);
-    border: 2px solid var(--image-border, rgb(153, 148, 148));
+    border: 1px solid var(--image-border-color, rgb(153, 148, 148));
+    box-shadow: 0 20px 30px 0 rgba(153,148,148,1);
 }
 
 #bullet-points-div{
