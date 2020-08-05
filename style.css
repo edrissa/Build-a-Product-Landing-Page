@@ -31,7 +31,10 @@
 }
 
 @media(max-width: 360px){
-    
+    .nav-link{
+        display: none;
+    }
+
     #bullet-points-div{
         flex-wrap: wrap;
     }
@@ -117,7 +120,6 @@ header{
 #header-img{
     width: 150px;
     height: 50px;
-    
 }
 
 #nav-link-div{
