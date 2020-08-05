@@ -10,7 +10,7 @@
     --title-font-size: 30px;
     --title-padding-top: 65px;
     --title-padding-bottom: 15px;
-    --text-font-size: 13.5px;
+    --text-font-size: ;
     --text-align: center;
     --text-line-height: 25px;
     --padding-left: 0px;
@@ -64,7 +64,6 @@
         --text-padding-top: 5px;
         --title-padding-bottom: 10px;
         
-        --text-font-size: 12.5px;
         --text-align: left;
         --text-line-height: 22.5px;
         --padding-left: 10px;
@@ -223,7 +222,7 @@ header{
     padding-top: var(--text-padding-top, 0px);
     padding-bottom: var(--text-padding-bottom, 25px);
     text-align: var(--text-align, center);
-    font-size: var(--text-font-size, 13.5px);
+    font-size: 13.5px;
     font-family: sans-serif;
     line-height: var(--text-line-height, 25px);
     max-width: 100%;
