@@ -30,7 +30,7 @@
     --row: row;
 }
 
-@media(max-width: 360px){
+@media(max-width: 500px){
     .nav-link{
         display: none;
     }
